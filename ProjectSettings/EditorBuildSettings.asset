@@ -6,7 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scene/Deafult.unity
+    path: Assets/Scene/MainMenu.unity
     guid: f0bad1d9b94a6684686eeaa49279064b
+  - enabled: 1
+    path: Assets/Scene/Chat.unity
+    guid: 37d8a7ecdad4d0b44bd05dfb2a3a85f2
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
