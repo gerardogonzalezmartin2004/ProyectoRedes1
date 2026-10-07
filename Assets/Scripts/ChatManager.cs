@@ -14,8 +14,34 @@ public class ChatManager : NetworkBehaviour
     [SerializeField] private TMP_Text chatLog;
     [SerializeField] private TMP_InputField chatMessageToSend;
     [SerializeField] private TMP_Text userConnected;
+    [SerializeField] private TMP_Text userListLog;
 
-   
+
+    private void OnEnable()
+    {
+        GameNetworkData.Singleton.PlayerListOnChange += UpdateChatUserList;
+
+    }
+    private void OnDisable()
+    {
+        GameNetworkData.Singleton.PlayerListOnChange -= UpdateChatUserList;
+    }
+    public override void OnNetworkSpawn()
+    {
+        UpdateChatUserList();
+    }
+    public void UpdateChatUserList()
+    {
+        userListLog.text = "";
+        for (int i = 0; i < GameNetworkData.Singleton.conecctedUsers.Count; i++)
+        {
+            userListLog.text += GameNetworkData.Singleton.conecctedUsers[i].networkPlayerName + "\n";
+        }
+    }
+    
+        
+    
+
     public void DisconectFromGame()
     {
         NetworkManager.Singleton.Shutdown();

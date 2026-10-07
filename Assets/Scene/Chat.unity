@@ -1124,7 +1124,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0.00034983663, y: -0.0009101574}
+  m_AnchoredPosition: {x: 0.0009208295, y: -0.0009101574}
   m_SizeDelta: {x: -20.9643, y: 0}
   m_Pivot: {x: 0, y: 1}
 --- !u!23 &978311667
@@ -1325,7 +1325,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.00090211444}
+  m_AnchoredPosition: {x: 0, y: 0.0009030756}
   m_SizeDelta: {x: 0, y: 300}
   m_Pivot: {x: 0, y: 1}
 --- !u!23 &994504212
@@ -1648,6 +1648,7 @@ MonoBehaviour:
   chatLog: {fileID: 978311668}
   chatMessageToSend: {fileID: 1580958153}
   userConnected: {fileID: 994504213}
+  userListLog: {fileID: 994504213}
 --- !u!4 &1101871969
 Transform:
   m_ObjectHideFlags: 0
@@ -1773,7 +1774,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1289871921}
   m_Direction: 0
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.9999988
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
@@ -1971,7 +1972,7 @@ MonoBehaviour:
   m_HandleRect: {fileID: 1731763294}
   m_Direction: 2
   m_Value: 0
-  m_Size: 1
+  m_Size: 0.99999857
   m_NumberOfSteps: 0
   m_OnValueChanged:
     m_PersistentCalls:
